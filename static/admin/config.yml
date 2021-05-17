@@ -25,9 +25,9 @@ collections:
         name: "home"
         file: "src/content/home.yml"
         fields:
-          - label: HomeContent
+          - label: Home Content
             name: HomeContent
-            widget: list
+            widget: "object"
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Content, name: content, widget: string}
@@ -48,9 +48,9 @@ collections:
         name: "about"
         file: "src/content/about.yml"
         fields:
-          - label: AboutContent
+          - label: About Content
             name: AboutContent
-            widget: list
+            widget: "object"
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Content, name: content, widget: string}

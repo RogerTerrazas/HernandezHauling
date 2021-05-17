@@ -6,29 +6,25 @@ export const useStyle = makeStyles((theme) => ({
         fontFamily: "'Roboto', sans-serif",
 
     },
+    body: {
+        margin: "0 !imporant",
+        padding:0
+    },
     container: {
         backgroundColor: props => props.page_background,
         boxShadow: "-20px 20px 100px #b1bfca",
         flexGrow: 1,
         paddingLeft: 0,
         paddingRight: 0,
+        paddingTop: 0,
         paddingBottom: theme.spacing(1),
+        overflow: "hidden",
 
         '& h1': { 
             textTransform: "uppercase",
-            color: props => props.header1_color+"!important",
         },
         '& h2': {
             textTransform: "uppercase",
-            color: props => props.header2_color
-
-        },
-        '& h3': {
-            color: props => props.header3_color,
-            // color: "blue !important"
-        },
-        '& h4': {
-            color: props => props.header4_color
         }
     },
     header : {
