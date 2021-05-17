@@ -1,8 +1,8 @@
 backend:
-    name: github
-    repo: RogerTerrazas/HernandezHauling
-    branch: main
-  
+  name: github
+  repo: RogerTerrazas/HernandezHauling
+  branch: main
+
 media_folder: static/img
 public_folder: /img
 
@@ -10,64 +10,44 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "General"
+        name: "general"
+        file: "src/content/general.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Email, name: email, widget: string}
+          - {label: Address, name: address, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: Facebook, name: facebook, widget: string, default: "", required: false}
+          - {label: Instagram, name: instagram, widget: string, default: "", required: false}
+
       - label: "Home Page"
         name: "home"
         file: "src/content/home.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Profile Image, name: photo, widget: image}
-          - {label: About Me, name: about, widget: string}
-          - {label: Email, name: email, widget: string}
-          - {label: Address, name: address, widget: string}
-          - {label: Phone, name: phone, widget: string}
-          - {label: Twitter, name: twitter, widget: string, default: "", required: false}
-          - {label: Facebook, name: facebook, widget: string, default: "", required: false}
-          - {label: Instagram, name: instagram, widget: string, default: "", required: false}
-          - {label: LinkedIn, name: linkedin, widget: string, default: "", required: false}
-          - {label: GitHub, name: github, widget: string, default: "", required: false}
-          - {label: Resume, name: resume, widget: string}
-          - label: Education
-            name: education
+          - label: "Service Cards"
+            name: serviceCard
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Sub, name: sub, widget: string}
-              - {label: Date, name: date, widget: string}
+              - {label: Title, name: title, widget: string}
               - {label: Content, name: content, widget: string}
-            
-          - label: Work
-            name: work
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Sub, name: sub, widget: string}
-              - {label: Date, name: date, widget: string}
-              - {label: Content, name: content, widget: string}
-          - label: Skills
-            name: skills
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Rank, name: rank, widget: string}
-          - label: Contact
-            name: contact
-            widget: list
-            fields:
-              - {label: Email, name: email, widget: string}
-              - {label: Phone, name: phone, widget: string}
-              - {label: Address, name: address, widget: string}
 
-
-      - label: "Styles"
-        name: "styles"
-        file: "src/content/styles.yml"
+          - label: "Services"
+            name: services
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+        
+      - label: "About Page"
+        name: "about"
+        file: "src/content/about.yml"
         fields:
-          - { label: 'Primary', name: 'primary', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Background', name: 'background', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Page Background', name: 'page-background', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Content Background', name: 'content-background', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Header One', name: 'header1-color', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Header Two', name: 'header2-color', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Header Three', name: 'header3-color', widget: 'color', enableAlpha: true, allowInput: true }
-          - { label: 'Header Four', name: 'header4-color', widget: 'color', enableAlpha: true, allowInput: true }
+          - label: "Tesitimonials"
+            name: Tesitimonials
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Date, name: date, widget: string}
+              - {label: Content, name: content, widget: string}
+          
 
