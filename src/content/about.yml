@@ -1,0 +1,18 @@
+Tesitimonials:
+  - title: John Doe
+    date: 5-10-2021
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      pellentesque enim nec libero fermentum malesuada id vel ante. Nulla et
+      gravida nisi. "
+  - title: Jane Doe
+    date: 5-10-2021
+    content: Quisque rutrum ornare vehicula. Nulla maximus, tortor in viverra
+      sodales, ante velit tincidunt augue, nec porttitor purus lacus at felis.
+      Vivamus pellentesque malesuada quam. Integer eleifend metus mollis tellus
+      commodo suscipit. Curabitur consequat dui ut erat tincidunt, nec
+      pellentesque metus elementum.
+  - title: Cris Gomez
+    date: 5-10-2021
+    content: Suspendisse suscipit eros eu nulla dignissim, nec viverra diam
+      tincidunt. Aenean non eros gravida, volutpat tellus ullamcorper,
+      sollicitudin mi.
