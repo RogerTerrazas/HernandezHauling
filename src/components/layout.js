@@ -1,5 +1,4 @@
 import React from "react"
-import "./layout.css"
 import { Helmet } from 'react-helmet'
 import { Container } from '@material-ui/core'
 

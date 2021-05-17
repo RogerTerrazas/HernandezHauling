@@ -9,12 +9,10 @@ import Icons from "../components/icons.js"
 import {useStyle} from "../components/styles.js"
 
 export default function Home({ data }) {
-  console.log(props)
-  const classes = useStyle(props);
   return (
-  <Layout props={props}>
+  <Layout>
     <div className="home">
-      
+    
     </div>
   </Layout>
   )
