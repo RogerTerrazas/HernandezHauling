@@ -18,15 +18,21 @@ export const useStyle = makeStyles((theme) => ({
         '& h1': { 
             textTransform: "uppercase",
             color: "white",
-            fontSize: "6vw",
+            fontSize: "7vw",
         },
         '& h2': {
             textTransform: "uppercase",
+            fontSize: "7vw",
         }
 
     },
     row : {
         marginTop: theme.spacing(1),
+    },
+    textField: {
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        width: '25ch',
     },
     item : {
         width: "100%",
@@ -40,7 +46,7 @@ export const useStyle = makeStyles((theme) => ({
         backgroundColor: props => props.content_background
     },
     button: {
-        backgroundColor: props => props.primary + "!important",
+        backgroundColor: "#E64A19 !important",
         color: 'white',
         fontStyle: "normal",
         fontWeight: "bold",
@@ -67,6 +73,7 @@ export const useStyle = makeStyles((theme) => ({
         width: "100%",
         zIndex: "0",
     }
+    
     
 
 

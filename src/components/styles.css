@@ -8,6 +8,7 @@ body {
     width: 60%;
     margin: auto;
     margin-top: -20vw;
+    margin-bottom: 10vw;
     overflow: visible;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -17,18 +18,58 @@ body {
 .serviceBox {
     background-color: white;
     margin: 3vw;
+    margin-top: 5vw;
     margin-bottom: 5vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
 .serviceBox .serviceHeader{
     background-color: white;
-    padding: 3vw;
+    padding: 2vw;
     font-size: 3vw
 
 }
 .serviceBox .serviceBody{
     color: white;
     background-color: #E64A19;
-    padding: 4vw;
+    padding: 5vw;
+}
+
+.whiteBox {
+    background: white;
+    padding: 5vw;
+    color:#E64A19;
+    border-radius: 10px;
+    margin-bottom: 5vw;
+}
+
+.whiteBox p{
+    background: white;
+    padding: 5vw;
+    color: black;
+    border-radius: 10px;
+}
+
+.whiteBox h2{
+    color: black;
+    font-style: italic;
+}
+
+.contactForm h2 {
+    color: #E64A19;
+    font-style: italic;
+}
+
+.MuiOutlinedInput-input {
+    background: white !important;
+    border-radius: 5px;
+}
+
+.MuiOutlinedInput-root {
+    margin-bottom: 10px;
+}
+
+.MuiButtonBase-root {
+    background: #E64A19 !important;
 }
