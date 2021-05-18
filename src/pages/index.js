@@ -10,7 +10,9 @@ import homeImg from "../../static/img/home.png"
 import {useStyle} from "../components/styles.js"
 
 export default function Home({ data }) {
-  const content = data.allContentYaml.edges[2].node;
+  const content = data.allContentYaml.nodes[1];
+  const homeContent = data.allContentYaml.nodes[2];
+
   console.log(data);
 
   return (
@@ -20,6 +22,16 @@ export default function Home({ data }) {
         <div className="headerBox">
           <i><h1>{content.title}</h1></i>
         </div>
+        {homeContent.serviceCard.map((service, index) => (
+          <div className="serviceBox">
+            <div className='serviceHeader'>
+              <h3>{service.title}</h3>
+            </div>
+            <div className='serviceBody'>
+              <p>{service.content}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </Layout>
     
@@ -29,18 +41,24 @@ export default function Home({ data }) {
 export const query = graphql`
 query MyQuery {
   allContentYaml {
-    edges {
-      node {
+    nodes {
+      serviceCard {
+        content
         title
-        phone
-        parent {
-          id
-        }
-        id
-        facebook
-        email
-        address
       }
+      services {
+        title
+      }
+      Tesitimonials {
+        content
+        date
+        title
+      }
+      address
+      email
+      facebook
+      phone
+      title
     }
   }
 }
