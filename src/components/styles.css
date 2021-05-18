@@ -1,0 +1,10 @@
+body {
+    margin: 0!important;
+}
+
+.headerBox {
+    background: #E64A19;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}

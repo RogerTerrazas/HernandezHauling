@@ -1,8 +1,11 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
 import { Container } from '@material-ui/core'
+import Navbar from './navbar'
 
+import "./styles.css"
 import {useStyle} from "../components/styles.js"
+import TemporaryDrawer from "./temporaryDrawer"
 
 export default function Layout({ children, props }) {
   const classes = useStyle(props);
@@ -10,10 +13,11 @@ export default function Layout({ children, props }) {
   return (
     <div className={classes.root}>
       <Helmet>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet"/>
+
       </Helmet>
-      <Container maxWidth="md" className={classes.container}>
+      <Container maxWidth="lg" className={classes.container}>
+        <TemporaryDrawer/>
         {children}
       </Container>
     </div>
