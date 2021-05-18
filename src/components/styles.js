@@ -65,7 +65,7 @@ export const useStyle = makeStyles((theme) => ({
     },
     image: {
         width: "100%",
-        zIndex: "0"
+        zIndex: "0",
     }
     
 

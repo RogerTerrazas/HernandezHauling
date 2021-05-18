@@ -10,7 +10,7 @@ import homeImg from "../../static/img/home.png"
 import {useStyle} from "../components/styles.js"
 
 export default function Home({ data }) {
-  const content = data.allContentYaml.edges[0].node;
+  const content = data.allContentYaml.edges[2].node;
   console.log(data);
 
   return (
