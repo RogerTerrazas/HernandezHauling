@@ -22,14 +22,17 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    //display: 'flex',
+    //width: "100%"
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    background: "#E64A19"
+    background: "#E64A19",
+    position: 'fixed',
+    //width: "100%"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -79,7 +82,7 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <div className={classes.root}>
+    <div>
       <CssBaseline />
       <AppBar
         position="sticky"

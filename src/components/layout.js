@@ -18,7 +18,9 @@ export default function Layout({ children, props }) {
       </Helmet>
       <Container maxWidth="lg" className={classes.container}>
         <TemporaryDrawer/>
-        {children}
+        <div style={{marginTop:'56px'}}>
+          {children}
+        </div>
       </Container>
     </div>
   )
