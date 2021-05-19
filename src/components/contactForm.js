@@ -11,11 +11,15 @@ export default function ContactForm({ props}) {
             <h2>Contact Us</h2>
             <form noValidate autoComplete="off">
                 <TextField id="outlined-basic" label="Name" variant="outlined" />
+                <br/>
                 <TextField id="outlined-basic" label="Phone" variant="outlined" />
+                <br/>
                 <TextField id="outlined-basic" label="Email" variant="outlined" />
+                <br/>
                 <TextField id="outlined-basic" label="Job Description" variant="outlined" />
+                <br/>
             </form>
-            <Button variant="contained" color="#E64A19">Submit</Button>
+            <Button className="contactForm" variant="contained" color="#E64A19">Submit</Button>
         </div>
     )
 }
