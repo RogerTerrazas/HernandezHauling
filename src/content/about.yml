@@ -1,10 +1,6 @@
 AboutContent:
   title: Why Choose Us?
-  content: Here at Hernandez hauling & Junk removal your time and satisfaction is
-    most important to us. We value our customers and love treating them like
-    family. We can assure your junk will be disposed of correctly and at a
-    competitive rate. Have an estimate or quote from a competitor? Call us now
-    and with that quote and we can either match and or beat that price!
+Here at Hernandez hauling & Junk removal your time and satisfaction is most important to us. We value our customers and love treating them like family. We can assure your junk will be disposed of correctly and at a competitive rate. Have an estimate or quote from a competitor? Call us now and with that quote and we can either match and or beat that price!
 Tesitimonials:
   - title: John Doe
     date: 5-10-2021
@@ -20,6 +16,4 @@ Tesitimonials:
       pellentesque metus elementum.
   - title: Cris Gomez
     date: 5-10-2021
-    content: Suspendisse suscipit eros eu nulla dignissim, nec viverra diam
-      tincidunt. Aenean non eros gravida, volutpat tellus ullamcorper,
-      sollicitudin mi.
+ Suspendisse suscipit eros eu nulla dignissim, nec viverra diam tincidunt. Aenean non eros gravida, volutpat tellus ullamcorper, sollicitudin mi.
