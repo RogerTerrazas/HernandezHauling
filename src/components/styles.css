@@ -15,6 +15,13 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.footer {
+    background: black;
+    color: white;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
 .serviceBox {
     background-color: white;
     margin: 3vw;
@@ -56,6 +63,9 @@ body {
     font-style: italic;
 }
 
+.contactForm {
+    margin-bottom: 3vw;
+}
 .contactForm h2 {
     color: #E64A19;
     font-style: italic;

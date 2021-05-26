@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
 import { Container } from '@material-ui/core'
-import Navbar from './navbar'
 
 import "./styles.css"
 import {useStyle} from "../components/styles.js"

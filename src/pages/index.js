@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
-import { Grid, Button } from "@material-ui/core";
+import Footer from "../components/footer"
 import Icons from "../components/icons.js"
 
 import homeImg from "../../static/img/home.png"
@@ -50,6 +50,7 @@ export default function Home({ data }) {
         </div>
 
         <ContactForm/>
+        <Footer/>
       </div>
     </Layout>
     
