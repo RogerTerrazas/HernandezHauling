@@ -30,13 +30,6 @@ module.exports = {
       name: `src`,
       path: `${__dirname}/src/`,
     },
-  },
-  `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/content/`,
-      },
-    },
+  }
 ],
 }
