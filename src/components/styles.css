@@ -1,6 +1,5 @@
 body {
     margin: 0!important;
-    position: relative;
 }
 
 a { 
@@ -8,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+.contact {
+    min-height: 100vh;
+
+}
 .headerBox {
     background: #E64A19;
     text-align: center;
@@ -26,8 +29,6 @@ a {
     color: white;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    position: absolute;
-    bottom: 0;
 }
 
 .serviceBox {
