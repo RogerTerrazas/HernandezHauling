@@ -14,7 +14,7 @@ export const useStyle = makeStyles((theme) => ({
         paddingTop: 0,
         paddingBottom: theme.spacing(1),
         textAlign: "center",
-
+        minHeight: "100vh",
         '& h1': { 
             textTransform: "uppercase",
             color: "white",

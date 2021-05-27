@@ -18,6 +18,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
+
+import { Link } from "gatsby"
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -122,13 +125,13 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
             <ListItem button>
-              <ListItemText>Home</ListItemText>
+              <ListItemText><Link to="/">Home</Link></ListItemText>
             </ListItem>
             <ListItem button>
-              <ListItemText>About</ListItemText>
+              <ListItemText><Link to="/about">About</Link></ListItemText>
             </ListItem>
             <ListItem button>
-              <ListItemText>Contact</ListItemText>
+              <ListItemText><Link to="/contact">Contact</Link></ListItemText>
             </ListItem>
         </List>
       </Drawer>
