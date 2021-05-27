@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 
 import aboutImg from "../../static/img/about.png"
-import {useStyle} from "../components/styles.js"
 import Footer from "../components/footer.js"
 import Testimonials from "../components/testimonial.js"
 import ContactForm from "../components/contactForm.js"
@@ -19,7 +18,7 @@ export default function About() {
           <i><h1>{aboutContent.AboutContent.title}</h1></i>
         </div>
         <div className="whiteBox">
-          <p>{aboutContent.AboutContent.content}</p>
+          <p><b><i>{aboutContent.AboutContent.content}</i></b></p>
         </div>
         <Testimonials/>
 
