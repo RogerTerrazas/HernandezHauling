@@ -25,8 +25,8 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    //display: 'flex',
-    //width: "100%"
+    display: 'flex',
+    flexGrow: 1,
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
     }),
     background: "#E64A19",
     position: 'fixed',
-    //width: "100%"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -47,9 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-  },
-  'h3': {
-    alignText: "right"
+    // flexGrow: 1,
   },
   hide: {
     display: 'none',
@@ -68,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    
   }
 }));
 
@@ -101,11 +99,13 @@ export default function PersistentDrawerLeft() {
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-          <MenuIcon />
+            <MenuIcon />
           </IconButton>
-          {/* <h3 variant="h6" noWrap>
-            <i>Call Now</i>
-          </h3> */}
+          <a href="tel:8665562570" style={{marginLeft: "auto", color: "white"}}>
+          <h3>
+            <i>Call Now! </i>
+          </h3>
+          </a>
         </Toolbar>
       </AppBar>
       <Drawer
