@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import CallIcon from '@material-ui/icons/Call';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
@@ -18,6 +19,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
+import generalContent from "../content/general.json"
 
 import { Link } from "gatsby"
 
@@ -101,10 +103,11 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <a href="tel:8665562570" style={{marginLeft: "auto", color: "white"}}>
-          <h3>
-            <i>Call Now! </i>
+          <a href={"tel:" + generalContent.phone} style={{marginLeft: "auto", color: "white", display: 'flex', alignItems: 'center'}}>
+          <h3 style={{marginRight:'10px'}}>
+            <i>Call Now!</i>
           </h3>
+          <CallIcon/>
           </a>
         </Toolbar>
       </AppBar>
